@@ -1,29 +1,37 @@
-importScripts('/_nuxt/workbox.4c4f5ca6.js')
+importScripts('/kity/assets/workbox.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/_nuxt/0922513b7d534f6d747e.js",
-    "revision": "b68e9b3787a1422cb87e14d0dc8580c1"
+    "url": "/kity/assets/158412a212b706174285.js",
+    "revision": "6d5d923063776b3693c9eab5e1e5311b"
   },
   {
-    "url": "/_nuxt/282e2ba76f9d5124addc.js",
-    "revision": "adf1a7fff99c349f1456eedd79706bf3"
+    "url": "/kity/assets/1c5006d9d069b473f380.js",
+    "revision": "be1b84501e1d7c6fcc3fbf686e922683"
   },
   {
-    "url": "/_nuxt/2ed84e3131225492c589.js",
-    "revision": "0b706489f77f0e664eb5912a7748d888"
+    "url": "/kity/assets/6af7e84cc93cc2aa6f2b.css",
+    "revision": "992c8a0b79067bb64290b718079f2a16"
   },
   {
-    "url": "/_nuxt/d1c93466d887bac59bbc.js",
-    "revision": "6a4871c41875b9a15f211940e06ed7fb"
+    "url": "/kity/assets/8f2b93e18d7bc34172e3.js",
+    "revision": "307742cf1502ed26831dded42c6f553e"
   },
   {
-    "url": "/_nuxt/d23bb9e8f40bcf0d19ea.js",
-    "revision": "c1f92590a2d12ad7b772276346a55e6b"
+    "url": "/kity/assets/a3b690ff86213ce2b5e2.js",
+    "revision": "629b07dc0c2fa6fa6014f9e4d7cb8b81"
   },
   {
-    "url": "/_nuxt/d5f7676417021987b313.js",
-    "revision": "2c71a2e161a36ef864635d0ef3bddf93"
+    "url": "/kity/assets/b7e6bbca699f7cd239af.js",
+    "revision": "f26de1f5e0eb22b7543c3bc5efdfc9ca"
+  },
+  {
+    "url": "/kity/assets/e112b995e59a40938727.js",
+    "revision": "22f2d5f6841dd199615126464061c101"
+  },
+  {
+    "url": "/kity/assets/ef64db489a6d84054600.css",
+    "revision": "50785836f3c58ef647813fe5f6701aa6"
   }
 ], {
   "cacheId": "kity-demo",
@@ -34,6 +42,6 @@ workbox.precaching.precacheAndRoute([
 workbox.clientsClaim()
 workbox.skipWaiting()
 
-workbox.routing.registerRoute(new RegExp('/_nuxt/.*'), workbox.strategies.cacheFirst({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/kity/assets/.*'), workbox.strategies.cacheFirst({}), 'GET')
 
 workbox.routing.registerRoute(new RegExp('/.*'), workbox.strategies.networkFirst({}), 'GET')
